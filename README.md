@@ -42,7 +42,7 @@ On all the Debian/Ubuntu -build virtual machines, install libpam0g-dev:
 
 Autoconf not installed /found 
 
-    apt-get install autoconf automake gdb git libffi-dev zlib1g-dev libssl-dev (Debian /ubuntu)
+    apt-get install autoconf automake gdb git libffi-dev zlib1g-dev libssl-dev  
 
  
 
