@@ -15,8 +15,7 @@ For SSH Key authentication,
 
 Please add the below lines<EOF> to /etc/ssh/sshd_config
 
-    AuthenticationMethods keyboard-interactive  // Please remove here public-key authencation, as we are using 1fa
-
+    AuthenticationMethods keyboard-interactive  
     KbdInteractiveAuthentication yes
 
 Restart the ssh service
@@ -25,11 +24,9 @@ Restart the ssh service
 
 Now login to the VM using ssh
 
-    ssh ubuntu@ec2-34-227-93-59.compute-1.amazonaws.com
-
-DID Authentication will initiate DID Assertion DoAuthentication Request →
-
-
+    ssh username@virtual-machine-name
+    
+AuthNull will initiate 1FA passwordless authentication
 
 In case there are any issues in running the .so file from logs .(use below options to fix)
 
