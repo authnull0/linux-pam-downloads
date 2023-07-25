@@ -5,7 +5,7 @@ Move the pam_authenticator.so file into /usr/local/lib/security path (if “secu
 
 Please add the below lines<EOF> to /etc/pam.d/sshd
 
-    auth required /usr/local/lib/security/pam_gauthenticator.so debug nullok
+    auth required /usr/local/lib/security/pam_authenticator.so debug nullok
 
     auth required pam_permit.so
 
@@ -78,7 +78,7 @@ b. Ubuntu Based
 
 Please add the below lines<EOF> to /etc/pam.d/common-auth
 
-    auth required /usr/local/lib/security/pam_google_authenticator.so debug nullok
+    auth required /usr/local/lib/security/pam_authenticator.so debug nullok
     auth required pam_permit.so  
 
 Comment below 
